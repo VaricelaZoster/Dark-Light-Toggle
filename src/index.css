@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Prompt';
+}
+
+@custom-variant dark (&:where(.dark, .dark *))
