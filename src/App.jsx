@@ -30,7 +30,7 @@ const App = () => {
         ></div>
       </div>
       
-      <button onClick={toggleDarkMode} className='fixed top-3 lg:top-4 right-3 lg:right-4 w-9 h-9 lg:w-10 lg:h-10 flex justify-center items-center bg-amber-500 rounded-full text-neutral-950 shadow-lg hover:bg-amber-600 transition-colors'>
+      <button onClick={toggleDarkMode} className='fixed top-3 lg:top-4 right-3 lg:right-4 w-9 h-9 lg:w-10 lg:h-10 flex justify-center items-center bg-amber-500 rounded-full text-neutral-950 shadow-lg hover:bg-amber-600 transition-colors z-10'>
         <i className={` bx bx-${darkMode ? "sun" : "moon"} text-lg lg:text-xl`}/>
       </button>
       <Hero/>
