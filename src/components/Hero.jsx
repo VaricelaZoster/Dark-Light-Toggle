@@ -26,6 +26,12 @@ const Hero = () => {
                 <p className="uppercase text-xs tracking-widest text-neutral-500 dark:text-neutral-400 font-medium">TRANSITION SEAMLESSLY</p>
               </div>
             </div>
+            <div className="flex flex-wrap gap-3 lg:gap-4">
+              <button className="px-6 py-3 lg:px-7 lg:py-3.5 rounded-lg bg-neutral-900 hover:bg-black text-white dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-neutral-900 font-medium shadow-lg hover:shadow-neutral-900/20 dark:hover:shadow-amber-500/20 flex items-center transition group duration-300 cursor-pointer">
+                <i className="bx bx-code-alt mr-2 lg:mr-3 lext-lg lg:text-xl group-hover:rotate-12 transition-transform "></i>
+                  <span className="">Start Coding</span></button>
+              <button className="">Documentation</button>
+            </div>
           </div>
         </div>
       </div>
