@@ -34,6 +34,25 @@ const Hero = () => {
                 <i className="bx bx-book-open mr-2 lg:mr-3 lext-lg lg:text-xl opacity-70 group-hover:opacity-100 transition-opacity "></i>
                   <span className="">Documentation</span></button>
             </div>
+            <div className="flex flex-col sm:flex-row gap-5 sm:items-center pt-6 lg:pt-7 border-t border-neutral-200 dark:border-neutral-800 ">
+              <div className="flex -space-x-3">
+                <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="User" className="w-9 h-9 lg:w-10 rounded-full border-2 border-white dark:border-neutral-900" />
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" className="w-9 h-9 lg:w-10 rounded-full border-2 border-white dark:border-neutral-900" />
+                <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="User" className="w-9 h-9 lg:w-10 rounded-full border-2 border-white dark:border-neutral-900" />
+                <span className="flex uppercase items-center justify-center w-9 h-9 lg:w-10 border-2 border-white dark:border-neutral-900 rounded-full text-xs font-medium bg-neutral-900 dark:bg-amber-500 text-white dark:text-neutral-900">+15k</span>
+              </div>
+              <div className="space-y-1">
+                <div className="flex items-center">
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star-half text-amber-500 mr-1"></i>
+                  <span className='text-neutral-600 dark:text-neutral-400 text-sm ml-1'>4.8/5</span>
+                </div>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm">Trusted by <span className="font-bold text-neutral-900 dark:text-white">5000+</span> developers worldwide</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
