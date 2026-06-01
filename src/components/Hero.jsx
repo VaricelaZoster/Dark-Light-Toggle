@@ -29,10 +29,10 @@ const Hero = () => {
             <div className="flex flex-wrap gap-3 lg:gap-4">
               <button className="px-6 py-3 lg:px-7 lg:py-3.5 rounded-lg bg-neutral-900 hover:bg-black text-white dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-neutral-900 font-medium shadow-lg hover:shadow-neutral-900/20 dark:hover:shadow-amber-500/20 flex items-center transition group duration-300 cursor-pointer">
                 <i className="bx bx-code-alt mr-2 lg:mr-3 lext-lg lg:text-xl group-hover:rotate-12 transition-transform "></i>
-                  <span className="">Start Coding</span></button>
+                <span className="">Start Coding</span></button>
               <button className="px-6 py-3 lg:px-7 lg:py-3.5 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-900 dark:text-white font-medium shadow-lg  flex items-center transition group duration-300 cursor-pointer border border-neutral-300 dark:border-neutral-700">
                 <i className="bx bx-book-open mr-2 lg:mr-3 lext-lg lg:text-xl opacity-70 group-hover:opacity-100 transition-opacity "></i>
-                  <span className="">Documentation</span></button>
+                <span className="">Documentation</span></button>
             </div>
             <div className="flex flex-col sm:flex-row gap-5 sm:items-center pt-6 lg:pt-7 border-t border-neutral-200 dark:border-neutral-800 ">
               <div className="flex -space-x-3">
@@ -51,6 +51,21 @@ const Hero = () => {
                   <span className='text-neutral-600 dark:text-neutral-400 text-sm ml-1'>4.8/5</span>
                 </div>
                 <p className="text-neutral-600 dark:text-neutral-400 text-sm">Trusted by <span className="font-bold text-neutral-900 dark:text-white">5000+</span> developers worldwide</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 w-full">
+            <div className="relative">
+              <div className="relative bg-white dark:bg-neutral-900 p-4 lg:p-5 xl:p-6 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-800">
+                <div className="flex items-center justify-between mb-3 lg:mb-4">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-red-500"></span>
+                    <span className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-amber-500"></span>
+                    <span className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-green-500"></span>
+                  </div>
+                  <div className="text-xs text-neutral-500 dark:text-neutral-400">dark-mode.jsx</div>
+                </div>
+                <div className="h-56 md:h-64 lg:h-60 xl:h-72 rounded-lg bg-neutral-100 dark:bg-neutral-800 overflow-hidden relative">Hello</div>
               </div>
             </div>
           </div>
