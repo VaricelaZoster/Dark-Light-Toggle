@@ -74,6 +74,17 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
+                <div className="mt-3 lg:mt-4 flex justify-between items-center">
+                  <div className="flex gap-2">
+                    <span className="px-2.5 py-1 lg:px-3 rounded-full bg-neutral-900 text-amber-400 text-xs font-medium flex items-center">
+                      <i className="bx bxl-tailwind-css mr-1"></i>Tailwind v4
+                    </span>
+                    <span className="px-2.5 py-1 lg:px-3 rounded-full bg-neutral-100 dark:bg-neutral-800 text-indigo-900 dark:text-indigo-400 border border-neutral-200 dark:border-neutral-700 text-xs font-medium flex items-center">
+                      <i className="bx bxl-react mr-1"></i>React
+                    </span>
+                  </div>
+                  <button className="w-8 h-8 lg:w-9 lg:h-9 xl:h-10 xl:w-10 flex items-center justify-center rounded-full bg-amber-500 text-neutral-900 hover:bg-amber-600 transition"><i className="bx bx-copy text-sm"></i></button>
+                </div>
               </div>
             </div>
           </div>
