@@ -1,6 +1,12 @@
 import React from 'react'
 
 const Hero = () => {
+
+  const copytext = async () => {
+    let text = "const ThemeToggle = () => { const [darkMode, setdarkMode] = useState(false);    useEffect(() => {if(darkMode){ document.documentElement.classList.add('dark');} else {document.documentElement.classList.remove('dark');}},[darkMode]);}"
+    await navigator.clipboard.writeText(text)
+  }
+
   return (
     <div className='isolate'>
       <div className='absolute inset-0 -z-10'>
@@ -56,6 +62,7 @@ const Hero = () => {
           </div>
           <div className="flex-1 w-full">
             <div className="relative">
+              <div className="absolute -inset-0.5 bg-linear-to-r from-amber-500 to-indigo-900 rounded-2xl blur-xl opacity-50 animate-pulse"></div>
               <div className="relative bg-white dark:bg-neutral-900 p-4 lg:p-5 xl:p-6 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-800">
                 <div className="flex items-center justify-between mb-3 lg:mb-4">
                   <div className="flex items-center gap-2">
@@ -83,7 +90,7 @@ const Hero = () => {
                       <i className="bx bxl-react mr-1"></i>React
                     </span>
                   </div>
-                  <button className="w-8 h-8 lg:w-9 lg:h-9 xl:h-10 xl:w-10 flex items-center justify-center rounded-full bg-amber-500 text-neutral-900 hover:bg-amber-600 transition"><i className="bx bx-copy text-sm"></i></button>
+                  <button onClick={copytext()} className="w-8 h-8 lg:w-9 lg:h-9 xl:h-10 xl:w-10 flex items-center justify-center rounded-full bg-amber-500 text-neutral-900 hover:bg-amber-600 transition"><i className="bx bx-copy text-sm"></i></button>
                 </div>
               </div>
             </div>
