@@ -65,7 +65,15 @@ const Hero = () => {
                   </div>
                   <div className="text-xs text-neutral-500 dark:text-neutral-400">dark-mode.jsx</div>
                 </div>
-                <div className="h-56 md:h-64 lg:h-60 xl:h-72 rounded-lg bg-neutral-100 dark:bg-neutral-800 overflow-hidden relative">Hello</div>
+                <div className="h-56 md:h-64 lg:h-60 xl:h-72 rounded-lg bg-neutral-100 dark:bg-neutral-800 overflow-hidden relative">
+                  <img src="/images/CodeLight.png" alt="Code snippet" className="w-full h-full object-cover object-top-left dark:hidden" />
+                  <img src="/images/CodeDark.png" alt="Code snippet" className="w-full h-full object-cover object-top-left dark:block" />
+                  <div className="absolute bottom-4 right-4">
+                    <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-linear-to-r from-amber-500 to-indigo-900 flex items-center justify-center text-white shadow-lg animate-pulse">
+                      <i className="bx bx-brightness-half text-xl lf:text-2xl"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
