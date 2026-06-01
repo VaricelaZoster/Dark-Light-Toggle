@@ -4,7 +4,10 @@ import { useState,useEffect } from 'react'
 
 const App = () => {
 
-  const [darkMode,setDarkMode] = useState(false)
+  const [darkMode,setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('theme')
+    return savedTheme === 'dark'
+  })
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
@@ -13,9 +16,11 @@ const App = () => {
   useEffect(() => {
     if(darkMode){
       document.documentElement.classList.add('dark')
+      localStorage.setItem('theme','dark')
     }
     else{
       document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme','light')
     }
   },[darkMode])
 
